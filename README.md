@@ -1,19 +1,22 @@
-# inventory
+# Автономно-работающий инвентарь
 
-## Project setup
+Реализация автономно работающего инвентаря: т.е. после закрытия браузера предметы и их позиции останутся сохраненными. По нажатию на предмет инвентаря выезжает плашка с его описанием и кнопкой удалить.
+
+Стек: Vue 3 composition api, SCSS, Pinia, TypeScript.
+
+## Запуск
+
+Установка зависимостей:
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+Запуск с отслеживанием изменений:
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+Запуск сборки:
 ```
 npm run build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
