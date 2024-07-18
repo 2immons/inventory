@@ -1,49 +1,41 @@
 <script setup lang="ts">
-import InventoryLeftSide from '@/components/InventoryLeftSide.vue'
-import InventoryGrid from "@/components/inventory_grid/InventoryGrid.vue";
-import InventoryBottom from "@/components/InventoryBottom.vue"
-
+import InventoryLeftSide from '@/components/InventoryLeftSide.vue';
+import InventoryGrid from '@/components/grid/InventoryGrid.vue';
+import InventoryBottom from '@/components/InventoryBottom.vue';
 </script>
 
 <template>
-
-  <div class="container">
-    <div class="inventory-main-block">
-      <InventoryLeftSide />
-      <InventoryGrid />
+    <div class="container">
+        <div class="inventory-main-block">
+            <InventoryLeftSide />
+            <InventoryGrid />
+        </div>
+        <div class="inventory-bottom-block">
+            <InventoryBottom />
+        </div>
     </div>
-    <div class="inventory-bottom-block">
-      <InventoryBottom />
-    </div>
-  </div>
-
 </template>
 
-<style>
-body {
-  background: black;
-}
-
+<style scoped lang="scss">
 .container {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: 1100px;
-  min-width: 800px;
-  width: 80%;
-  aspect-ratio: 1.5;
-  background: red;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1100px;
+    min-width: 800px;
+    width: 80%;
+    aspect-ratio: 1.5;
 }
 
 .inventory-main-block {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
 }
 
 .inventory-bottom-block {
-  margin-top: 24px;
-  width: 100%;
+    margin-top: 24px;
+    width: 100%;
 }
-
 </style>
